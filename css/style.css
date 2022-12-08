@@ -1,0 +1,413 @@
+/* GENERAL */
+body {
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+}
+
+p {
+   color: var(--clr-gray);
+}
+
+i {
+   font-size: 2rem;
+}
+
+:root {
+   --fs-large: clamp(1.5rem, 5vw + 1rem, 5rem);
+   --fs-2rem: 2rem;
+   --fs-50: 50px;
+   --fw-200: 200;
+   --fw-400: 400;
+   --fw-600: 600;
+   --fw-800: 800;
+   --clr-gray: #4e4e4e;
+   --main-clr: #343434;
+}
+
+/* Nav-bar */
+
+
+
+.logo a {
+   font-size: 18px;
+   color: white;
+   font-weight: var(--fw-800);
+   letter-spacing: 1px;
+}
+
+.nav-links a {
+   font-size: 14px;
+   font-weight: var(--fw-600);
+   color: white;
+   letter-spacing: 0.4px;
+   margin-right: 8px;
+}
+
+.nav-item .uline::before {
+   content: "";
+   position: absolute;
+   width: 0%;
+   height: 2px;
+   background-color: #fff;
+   bottom: 5px;
+   left: 1;
+   visibility: hidden;
+   transition: all 0.3s ease-in-out 0s;
+
+}
+
+.nav-item:hover .uline::before {
+   width: 50%;
+   visibility: visible;
+
+}
+
+
+/* Home Section */
+.layer {
+   background-color: rgba(0, 0, 0, 0.6);
+   width: 100%;
+   height: 100%;
+}
+
+.home {
+   background-image: url(../img2/bg.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+   text-align: center;
+}
+
+.home h5 {
+   font-size: var(--fs-50);
+   font-weight: var(--fw-800);
+
+}
+
+.home h1 {
+   font-size: var(--fs-large);
+   font-weight: var(--fw-200);
+
+}
+
+.typing::after {
+   content: " ";
+   color: white;
+   font-weight: var(--fw-400);
+   animation: typing 5s infinite ease;
+}
+
+.social-icons span {
+   display: inline-block;
+   width: 35px;
+   height: 35px;
+   margin: 5px;
+   border-radius: 50%;
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 10px;
+}
+
+.social-icons span i {
+   font-size: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+}
+
+@keyframes typing {
+   0% {
+      content: " |"
+   }
+
+   4% {
+      content: " I|"
+   }
+
+   8% {
+      content: " Ib|"
+   }
+
+   12% {
+      content: " Ibr|"
+   }
+
+   16% {
+      content: " Ibra|"
+   }
+
+   20% {
+      content: " Ibrah|"
+   }
+
+   24% {
+      content: " Ibrahi|"
+   }
+
+   28% {
+      content: " Ibrahim|"
+   }
+
+   32% {
+      content: " Ibrahim|"
+   }
+
+   36% {
+      content: " Ibrahim |"
+   }
+
+   40% {
+      content: " Ibrahim O|"
+   }
+
+   44% {
+      content: " Ibrahim Om|"
+   }
+
+   48% {
+      content: " Ibrahim Oma|"
+   }
+
+   52% {
+      content: " Ibrahim Omar.|"
+   }
+
+
+   56% {
+      content: " Ibrahim Oma|"
+   }
+
+   60% {
+      content: " Ibrahim Om|"
+   }
+
+   64% {
+      content: " Ibrahim O|"
+   }
+
+   68% {
+      content: " Ibrahim |"
+   }
+
+   72% {
+      content: " Ibrahim|"
+   }
+
+   76% {
+      content: " Ibrahi|"
+   }
+
+   80% {
+      content: " Ibrah|"
+   }
+
+   84% {
+      content: " Ibra|"
+   }
+
+   88% {
+      content: " Ibr|"
+   }
+
+   92% {
+      content: " Ib|"
+   }
+
+   96% {
+      content: " I|"
+   }
+
+   100% {
+      content: " |"
+   }
+}
+
+/* START ABOUT SECTION */
+.about .about-img img {
+   width: 85%;
+}
+
+.about .about-img::after {
+   content: '';
+   width: 80%;
+   height: 80%;
+   position: absolute;
+   left: 10px;
+   bottom: -30px;
+   background-image: url(../img2/dots.png);
+   background-repeat: repeat;
+   z-index: -1;
+}
+
+.about .about-content header h3 {
+   font-size: var(--fs-2rem);
+   font-weight: var(--fw-800);
+   margin-bottom: 5px;
+}
+
+.about .about-content header span {
+   letter-spacing: 2px;
+   font-weight: 400;
+   font-size: 14px;
+}
+
+/* ABOUT SECTION END */
+/* SECTIONS HEADER */
+.title h3 {
+   font-size: var(--fs-50);
+   font-weight: var(--fw-800);
+}
+
+.title h3::after {
+   content: '';
+   width: 20%;
+   height: 80%;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 0;
+   border-bottom: 1px dashed gray;
+
+}
+
+/* SECTIONS HEADER END */
+
+/* SERVICES SECTION START */
+
+.services .card {
+   background: rgba(255, 255, 255, 0.35) !important;
+   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+   backdrop-filter: blur(7.5px) !important;
+   -webkit-backdrop-filter: blur(7.5px) !important;
+   border-radius: 10px;
+   border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+
+.services .icon-container {
+   width: 80px;
+   height: 80px;
+   border-color: #afd4ff;
+   border-radius: 50%;
+   background-color: #F7F7F7;
+   color: black;
+   transition: all 1s;
+}
+
+.card:hover .icon-container {
+   color: #F7F7F7;
+   background-color: black;
+}
+
+/* PORTFOLIO START */
+
+.card-caption .icons .icon-link a {
+   width: 35px;
+   height: 35px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+   color: white;
+   border-radius: 50%;
+   padding: 10px;
+   border: 1px solid white;
+
+}
+
+.card-caption .icons .icon-link a i {
+   font-size: 1rem;
+}
+
+.item .card-caption {
+   opacity: 0;
+   padding: 5px;
+   transition: all 0.3s;
+   border: 8px solid rgba(255, 255, 255, 0.5);
+   border-radius: 8px;
+}
+
+.card-caption .card-text {
+   transform: translateY(-100%);
+   transition: all 1s;
+}
+
+.card-caption .icons {
+   transform: translateY(100%);
+   transition: all 1s;
+}
+
+.item:hover .card-caption {
+   opacity: 0.5;
+
+}
+
+.item:hover .card-text,
+.icons {
+   transform: translateY(0)
+}
+
+.item:hover .icons {
+   transform: translateY(0)
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+   background-color: gray;
+}
+
+/* WORK SECTION */
+
+.carousel-inner .carousel-img {
+   width: 150px;
+   height: 150px;
+}
+
+.carousel-indicators [data-bs-target] {
+   background-color: gray;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target]:hover {
+
+   background-color: black;
+}
+
+/* COUNTER SECTION */
+
+.counter {
+   background-image: url(../img/counters-bg.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+}
+
+
+.count p {
+   font-size: var(--fs-2rem);
+   font-weight: var(--fw-800);
+}
+
+
+.contact .item .icon i {
+   width: 70px;
+   height: 70px;
+   margin: auto;
+   background: #f4f4f4;
+   transition: all 0.5s;
+}
+
+.contact .item:hover .icon i {
+   color: white;
+   background: black;
+}
+
+/* BLOG SECTION */
+.blog-item img {
+   transition: all 1s;
+}
+
+.blog-item:hover img {
+   transform: scale(1.2);
+}
